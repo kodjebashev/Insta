@@ -1,0 +1,20 @@
+﻿<Window x:Class="Insta.Views.Identity.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Insta.Views"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="450" Width="800">
+    <Grid>
+         <Viewbox> 
+             <StackPanel Margin="100 0">
+                <Label HorizontalAlignment="Center">Login</Label>
+                <TextBox x:Name="inputEmail" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top"  Margin="90,0" Width="189" Foreground="Gray"/>
+                <TextBox x:Name="inputPassword" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top"  Margin="90,5" Width="189" Foreground="Gray"/>
+                <Button  Content="Login" Click="Button_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,0" Width="189"/>
+                
+                <Button Style="{StaticResource registerLink}" Click="redirectToRegister">If you dont have an account go to  Register page</Button></StackPanel> 
+         </Viewbox>
+    </Grid>
+</Window>

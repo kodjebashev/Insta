@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="Insta.Attributes.followBadge"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Insta.Attributes"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="150">
+    <Border Background="DarkBlue" CornerRadius="10">
+        <StackPanel Orientation="Horizontal"> <StackPanel HorizontalAlignment="Left">
+            <Border Margin="0 5 0 0" Height="40" Width="40" CornerRadius="15" Background="AliceBlue">
+                <Image x:Name="image"/>
+            </Border>           
+        </StackPanel>
+        <StackPanel Width="110" HorizontalAlignment="Right">
+            <Label x:Name="labelName">Name</Label>
+                <Border Style="{StaticResource ButtonFollow}">
+                    <Button Style="{StaticResource ButtonBase}">Follow</Button>
+                </Border>
+            </StackPanel>
+    </StackPanel>
+    </Border>
+</UserControl>

@@ -1,0 +1,21 @@
+﻿<Window x:Class="Insta.Views.Identity.Register.RegisterWindowOne"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="RegisterWindow" Height="450" Width="800">
+    <Grid >
+        <Viewbox>
+            <StackPanel Margin="100 0">
+                <Label HorizontalAlignment="Center">Registration</Label>
+                <TextBox x:Name="inputName" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top"  Margin="90,0" Width="189" Foreground="Gray"/>
+                <TextBox x:Name="inputPassword" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top"  Margin="90,5" Width="189" Foreground="Gray"/>
+                <TextBox x:Name="inputConfirmPassword" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Comfirm Password" VerticalAlignment="Top"  Margin="90,0,0,5" Width="189" Foreground="Gray"/>
+                <Button  Click="redirectToRegTwo" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,5,0,0" Width="189">Next =></Button>
+
+                <Button Style="{StaticResource registerLink}" Click="redirectToRegTwo">If you have account go to Login page</Button>
+            </StackPanel>
+        </Viewbox>
+    </Grid>
+</Window>
